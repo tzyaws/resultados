@@ -17,10 +17,12 @@
     --memoria-bg: #ffb21e;
     --verbal-bg: #00bb8f;
     --visual-bg: #1125d6;
+    --very-light-blue: #ecf2ff;
 }
 
 body {
     font-size: 1.6rem;
+    background: var(--very-light-blue);
 }
 
 .resultados {
@@ -75,6 +77,7 @@ body {
 
 .resumo {
     padding: 2.4rem 3.2rem;
+    background: var(--white);
 }
 
 
@@ -145,4 +148,72 @@ body {
     border-radius: 12.8rem;
     font-size: 1.8rem;
     font-weight: 700;
+}
+
+@media (min-width: 736px) {
+    body {
+        min-height: 100svh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 736px;
+        background: var(--white);
+        border-radius: 3.2rem 0 0 3.2rem;
+    }
+
+
+    .resultados {
+        padding-block: 3.8rem;
+        border-radius: 3.2rem;
+    }
+
+
+    .resultados h1 {
+        font-size: 2.4rem;
+        margin-bottom: 3.6rem;
+    }
+
+
+    .resultados div {
+        width: 20rem;
+        height: 20rem;
+        margin-bottom: 2.8rem;
+    }
+
+
+    .resultados div strong:nth-of-type(1) {
+        font-size: 7.2rem;
+    }
+
+
+    .resultados div strong:nth-of-type(2) {
+        font-size: 1.8rem;
+    }
+
+
+    .resultados h2 {
+        font-size: 3.2rem;
+        margin-bottom: 1.6rem;
+    }
+
+
+    .resultados p {
+        font-size: 1.8rem;
+    }
+
+    .resumo {
+        padding: 3.8rem 4rem;
+    }
+
+
+    .resumo h2 {
+        font-size: 2.4rem;
+        margin-bottom: 3rem;
+    }
 }
